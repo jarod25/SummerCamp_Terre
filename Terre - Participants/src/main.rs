@@ -13,7 +13,7 @@ use help::parse_second_input;
 mod help;
 
 fn generate_board(size: usize) -> DoubleArray {
-
+    let mut board = vec![vec![Element::Clear; size]; size];
 }
 pub fn lose(board: &DoubleArray, coords: &Vec<usize>) -> bool {
 
