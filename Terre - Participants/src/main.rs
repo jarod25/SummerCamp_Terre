@@ -22,17 +22,18 @@ fn generate_board(size: usize) -> DoubleArray {
     return board;
 }
 pub fn lose(board: &DoubleArray, coords: &Vec<usize>) -> bool {
-
+    return true;
 }
 
 pub fn get_cactus_number(board_solution: &DoubleArray) -> u16 {
-
+    return 1;
 }
 
 pub fn win(board: &DoubleArray, board_solution: &DoubleArray, cactus_number: u16) -> bool {
-
+    return true;
 }
 
 pub fn main() {
     let board=generate_board(20);
+    print_board(&board);
 }
