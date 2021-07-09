@@ -14,6 +14,11 @@ mod help;
 
 fn generate_board(size: usize) -> DoubleArray {
     let mut board = vec![vec![Element::Clear; size]; size];
+    for _ in 0..size {
+        let x = rand::thread_rng().gen_range(0..size);
+        let y = rand::thread_rng().gen_range(0..size);
+        ...
+    }
 }
 pub fn lose(board: &DoubleArray, coords: &Vec<usize>) -> bool {
 
