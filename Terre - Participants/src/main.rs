@@ -17,8 +17,9 @@ fn generate_board(size: usize) -> DoubleArray {
     for _ in 0..size {
         let x = rand::thread_rng().gen_range(0..size);
         let y = rand::thread_rng().gen_range(0..size);
-        ...
+        board[y][x] =  Element::Cactus;
     }
+    return board;
 }
 pub fn lose(board: &DoubleArray, coords: &Vec<usize>) -> bool {
 
