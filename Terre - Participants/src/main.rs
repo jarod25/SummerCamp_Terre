@@ -34,5 +34,5 @@ pub fn win(board: &DoubleArray, board_solution: &DoubleArray, cactus_number: u16
 }
 
 pub fn main() {
-    let board=generate_board(20)
+    let board=generate_board(20);
 }
